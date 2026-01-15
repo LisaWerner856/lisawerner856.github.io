@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Werner</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jua&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        //   tailwind things
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customLavendar: '#C0AEDB',
+                        customPink: '#E3B0C9',
+                        customLightPink: '#E6B6D0',
+                        customDarkPurple: '#2D0736',
+                        customLightPurple: '#430B47'
+                    },
+                    fontFamily: {
+                        'sans': ['ui-sans-serif', 'system-ui'],
+                        'serif': ['ui-serif', 'Georgia'],
+                        'mono': ['ui-monospace', 'SFMono-Regular'],
+                        'kodchasan': ['Kodchasan', 'sans-serif'],
+                        'jua': ['Jua', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'purple': '0 4px 12px rgba(27, 16, 28, 1)',
+                        'purple-t': '0 -4px 12px rgba(27, 16, 28, 1)',
+                    },
+
+                },
+            }
+
+        }
+    </script>
+</head>
+
+<body class="font-kodchasan bg-gradient-to-r from-customDarkPurple to-customLightPurple text-white">
+    <div id="starfield"></div>
+    <!-- Header -->
+    <header class="p-4 text-lg bg-gradient-to-r from-[#f9a8d41f] to-[#f9a8d41f] shadow-purple">
+        <section class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="logo font-bold text-2xl font-jua">Lisa Werner</div>
+            <nav>
+                <a class="p-4" href="index.html">Home</a>
+                <a class="p-4" href="projects.html">Projects</a>
+                <a class="p-l-4" href="contact.html">Contact</a>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Hier is my main section, containing a welcome message and a short introdution over who I am -->
+    <main class="max-w-4xl mx-auto flex justify-center">
+
+        <section class="mt-8 mb-8 w-full">
+            <!-- Project cards -->
+            <div class="bg-customLightPurple rounded-lg drop-shadow-lg w-full p-4">
+                <div>
+                    <h2 class="font-jua text-center text-5xl pt-4 pb-4"> Portfolio Website✨</h2>
+                    <!-- technology indicators -->
+                    <nav class="flex justify-center pb-6">
+                        <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
+                            <p>html</p>
+                        </div>
+                        <div class="bg-customDarkPurple rounded-full px-2 ml-2 text-sm drop-shadow-lg">
+                            <p>css</p>
+                        </div>
+                        <div class="bg-customDarkPurple rounded-full px-2 ml-2 text-sm drop-shadow-lg">
+                            <p>tailwind</p>
+                        </div>
+                    </nav>
+                    <!-- image -->
+                    <div class="flex justify-center">
+                        <img class="w-5/6" src="./image/cat.jpg" alt="project-image">
+                    </div>
+                    <!-- Desctiption -->
+                    <div class="flex justify-center mt-4 mb-2">
+                        <div class="w-5/6">
+                            <h2 class="text-2xl">How I Built My Website from Scratch</h2>
+                            <p>Building my website from scratch was a rewarding process. Here’s a quick breakdown:</p>
+                          
+                            <ol>
+                              <li>
+                                <h3 class="text-xl underline">Planning and Design</h3>
+                                <p>I began by sketching a wireframe and planning the site’s structure for an intuitive user experience.</p>
+                              </li>
+                              <li>
+                                <h3 class="text-xl underline">Writing HTML</h3>
+                                <p>I wrote clean, semantic HTML to organize the content and ensure accessibility and SEO.</p>
+                              </li>
+                              <li>
+                                <h3 class="text-xl underline">Styling with Tailwind CSS</h3>
+                                <p>I used <strong>Tailwind CSS</strong>, a utility-first framework, to style the site. It allowed me to quickly customize elements like typography, colors, and spacing without writing extensive custom CSS.</p>
+                              </li>
+                              <li>
+                                <h3 class="text-xl underline">Interactivity</h3>
+                                <p>I added simple JavaScript for features like modals and smooth scrolling, keeping the site lightweight and user-friendly.</p>
+                              </li>
+                              <li>
+                                <h3 class="text-xl underline">Optimization and Testing</h3>
+                                <p>I optimized the site for speed and tested it across browsers and devices for compatibility.</p>
+                              </li>
+                              <li>
+                                <h3 class="text-xl underline">Launching</h3>
+                                <p>Once everything was polished, I deployed the site using <span>[Hosting Platform]</span>, making it live for everyone to see.</p>
+                              </li>
+                            </ol>
+                          
+                            <p class="py-2">Building this site from scratch allowed me to create a unique, responsive experience that reflects my vision. I'm proud of the final result!</p>
+                        </div>
+                          
+                    </div>
+
+                    <!-- GitHub Link -->
+                    <div class="flex justify-center gap-4">
+                        <a class="bg-customDarkPurple rounded-lg p-2" href="https://github.com/">GitHub</a>
+                        <a class="bg-customDarkPurple rounded-lg p-2" href="./projects.html">Back to Projects</a>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+    <footer
+        class="static relative bottom-0 w-full p-4 text-center bg-gradient-to-r from-[#f9a8d41f] to-[#f9a8d41f] shadow-purple-t">
+        <div class="">
+            <p> 2025 &copy; Lisa Werner</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
