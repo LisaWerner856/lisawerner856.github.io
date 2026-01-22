@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jua&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="stars.js"></script>
     <script>
         //   tailwind things
         tailwind.config = {
@@ -40,13 +43,14 @@
     </script>
 </head>
 
-<body class="font-kodchasan bg-gradient-to-r from-customDarkPurple to-customLightPurple text-white">
+<body class="font-kodchasan bg-gradient-to-r from-customDarkPurple to-customDarkPurple text-white">
+    <div id="starfield"></div>
     <!-- Header -->
     <header class="p-4 text-lg bg-gradient-to-r from-[#f9a8d41f] to-[#f9a8d41f] shadow-purple">
         <section class="max-w-4xl mx-auto flex justify-between items-center">
-            <div class="logo font-bold text-2xl font-jua">Lisa Werner</div>
+            <a class="logo font-bold text-2xl font-jua" href="index.html">Lisa Werner</a>
             <nav>
-                <a class="p-4" href="index.html">Home</a>
+                <a class="p-4 " href="index.html">Home</a>
                 <a class="p-4 underline" href="#">Projects</a>
                 <a class="p-l-4" href="contact.html">Contact</a>
             </nav>
@@ -54,51 +58,174 @@
     </header>
 
     <!-- Hier is my main section, containing a welcome message and a short introdution over who I am -->
-    <main class="max-w-4xl mx-auto place-content-center">
+    <main class="max-w-4xl mx-auto">
+        <div class="flex flex-wrap justify-center mt-10">
 
-        <h2 class="font-jua text-center text-3xl py-4"> Project Library</h2>
-        <section class="mt-8 mb-8">
-            <!-- Project cards -->
-            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-                <!-- Card 1 -->
-                <div class="bg-customLightPurple rounded-lg drop-shadow-lg">
-                    <!-- image -->
-
-                    <img class="rounded-t-lg" src="./image/arduino1.jpg" alt="project-image" style="width: 100%;">
-                    <!-- text -->
-                    <div class="p-3">
-                        <h3 class="text-2xl mb-2">Simon says game</h3>
-                        <nav class="flex items-center justify-auto">
-                            <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
-                                <p>arduino</p>
-                            </div>
-                            <div class="bg-customDarkPurple rounded-full px-2 ml-2 text-sm drop-shadow-lg">
-                                <p>c/c++</p>
-                            </div>
-                        </nav>
-                        <div class="my-4">
-                            <p>
-                                I recreated the classic simon says game (electronic version) with an arduino uno. 
-                            </p>
-                        </div>
-                        <div>
-                            <button class="bg-customDarkPurple rounded-lg p-2"><a href="https://github.com/LisaWerner856/KD-Microcontroller">Github Repository</a></button>
-                        </div>
-                    </div>
-                </div>
-
-
+    <!-- card 1 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full bg-customLightPurple flex-col">
+            <div class="h-350 overflow-hidden rounded-t-lg">
+                <img src="./image/arduino1.jpg"
+                    alt="image"
+                    class="w-full h-full object-cover">
             </div>
-        </section>
+
+            <div class="flex flex-col justify-between flex-grow px-8 py-4">
+                <h3 class="text-2xl mb-2">Simon says game</h3>
+                <nav class="flex items-center justify-auto mb-3">
+                    <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
+                        <p>arduino</p>
+                    </div>
+                    <div class="bg-customDarkPurple rounded-full px-2 ml-2 text-sm drop-shadow-lg">
+                        <p>c/c++</p>
+                    </div>
+                </nav>
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    I recreated the classic simon says game (electronic version) with an arduino uno. 
+                </p>
+                <a href="https://github.com/LisaWerner856/KD-Microcontroller" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Github Repository
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full bg-customLightPurple flex-col">
+            <div class="h-350 overflow-hidden rounded-t-lg">
+            <img src="./image/portfoliowebsite-screenshot.png"
+                alt="image"
+                class="w-full h-full object-cover">
+            </div>
+
+            <div class="flex flex-col justify-between flex-grow px-8 py-4">
+                <h3 class="text-2xl mb-2">Portfolio website</h3>
+                <nav class="flex items-center justify-auto mb-3">
+                    <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
+                        <p>html</p>
+                    </div>
+                    <div class="bg-customDarkPurple rounded-full px-2 ml-2 text-sm drop-shadow-lg">
+                        <p>css/tailwind</p>
+                    </div>
+                </nav>
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    The Repository for my website.
+                </p>
+                <a href="https://github.com/LisaWerner856/lisawerner856.github.io" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Github Repository
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full bg-customLightPurple flex-col">
+            <div class="h-350 overflow-hidden rounded-t-lg">
+                <img src="./image/"
+                    alt="image"
+                    class="w-full h-full object-cover">
+            </div>
+
+            <div class="flex flex-col justify-between flex-grow px-8 py-4">
+                <h3 class="text-2xl mb-2">2D Plattformer</h3>
+                <nav class="flex items-center justify-auto mb-3">
+                    <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
+                        <p>unity3d engine</p>
+                    </div>
+                    <div class="bg-customDarkPurple rounded-full px-2 ml-2 text-sm drop-shadow-lg">
+                        <p>c#</p>
+                    </div>
+                </nav>
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    Racing game made in Unity3D engine.
+                </p>
+                <a href="#" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Github Repository
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full bg-customLightPurple flex-col">
+            <div class="flex items-center">
+                <img src="./image/" alt="image" class="rounded-t-lg">
+            </div>
+            <div class="flex flex-col justify-between flex-grow px-8 py-4">
+                <h3 class="text-2xl mb-2">Textbased RPG</h3>
+                <nav class="flex items-center justify-auto mb-3">
+                    <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
+                        <p>c#</p>
+                    </div>
+                </nav>
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    A console application textbased rpg, inspired by the classic game Zork.
+                    The setting is the Deep Space Nine space station.
+                    You have just graduated from Starfleet academy, ready to start your first assignment.
+                </p>
+                <a href="https://github.com/LisaWerner856/Textbased-RPG" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Github Repository
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 5 -->
+    <!-- <div class="p-4 max-w-sm">
+        <div class="flex rounded-lg h-full bg-customLightPurple flex-col">
+            <div class="flex items-center">
+                <img src="./image/arduino1.jpg" alt="image" class="rounded-t-lg">
+            </div>
+            <div class="flex flex-col justify-between flex-grow px-8 py-4">
+                <h3 class="text-2xl mb-2">Simon says game</h3>
+                <nav class="flex items-center justify-auto mb-3">
+                    <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
+                        <p>arduino</p>
+                    </div>
+                    <div class="bg-customDarkPurple rounded-full px-2 ml-2 text-sm drop-shadow-lg">
+                        <p>c/c++</p>
+                    </div>
+                </nav>
+                <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                    I recreated the classic simon says game (electronic version) with an arduino uno. 
+                </p>
+                <a href="https://github.com/LisaWerner856/KD-Microcontroller" class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Github Repository
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div> -->
+    
+
+</div>
+
+
     </main>
 
-   <footer
-        class="static absolute bottom-0 w-full p-4 text-center bg-gradient-to-r from-[#f9a8d41f] to-[#f9a8d41f] shadow-purple-t">
+    <footer
+        class="w-full p-4 mt-4 text-center bg-gradient-to-r from-[#f9a8d41f] to-[#f9a8d41f] shadow-purple-t">
         <div class="">
             <p> 2026 &copy; Lisa Werner</p>
         </div>
     </footer>
-    
 </body>
 
 </html>
