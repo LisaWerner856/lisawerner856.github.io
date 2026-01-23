@@ -12,7 +12,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="stars.js"></script>
     <script>
-        //   tailwind things
         tailwind.config = {
             theme: {
                 extend: {
@@ -41,64 +40,73 @@
         }
     </script>
     <script>
-function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("hidden");
-}
-</script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
 
 </head>
 
 <body class="font-kodchasan bg-gradient-to-r from-customDarkPurple to-customDarkPurple text-white">
     <div id="starfield"></div>
     <header class="p-4 bg-gradient-to-r from-[#f9a8d41f] to-[#f9a8d41f] shadow-purple">
-    <section class="max-w-4xl mx-auto flex justify-between items-center relative">
+        <section class="max-w-4xl mx-auto flex justify-between items-center relative">
 
-        <a class="font-bold text-2xl font-jua" href="index.html">
-            Lisa Werner
-        </a>
+            <a class="font-bold text-2xl font-jua" href="index.html">
+                Lisa Werner
+            </a>
 
-        <nav class="hidden md:flex space-x-6 text-lg">
-            <a class="underline" href="#">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a class="underline" href="#">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-        <button class="md:hidden flex flex-col justify-between w-6 h-5"
-                onclick="toggleMenu()"
+            <button class="md:hidden flex flex-col justify-between w-6 h-5" onclick="toggleMenu()"
                 aria-label="Open menu">
-            <span class="block h-0.5 bg-white"></span>
-            <span class="block h-0.5 bg-white"></span>
-            <span class="block h-0.5 bg-white"></span>
-        </button>
+                <span class="block h-0.5 bg-white"></span>
+                <span class="block h-0.5 bg-white"></span>
+                <span class="block h-0.5 bg-white"></span>
+            </button>
 
-        <nav id="mobileMenu"
-             class="hidden absolute top-full left-0 w-full bg-customLightPurple text-center text-lg shadow-lg md:hidden">
-            <a class="block p-4 underline" href="#">Home</a>
-            <a class="block p-4" href="projects.html">Projects</a>
-            <a class="block p-4" href="contact.html">Contact</a>
-        </nav>
+            <nav id="mobileMenu"
+                class="hidden absolute top-full left-0 w-full bg-customLightPurple text-center text-lg shadow-lg md:hidden">
+                <a class="block p-4 underline" href="#">Home</a>
+                <a class="block p-4" href="projects.html">Projects</a>
+                <a class="block p-4" href="contact.html">Contact</a>
+            </nav>
 
-    </section>
-</header>
+        </section>
+    </header>
 
 
-    <!-- Hier is my main section, containing a welcome message and a short introdution over who I am -->
     <main class="max-w-4xl mx-auto">
         <section class="mt-20 mb-8 ">
             <div class="text-center">
                 <h1 class="font-jua text-5xl">✨Welcome to my Website✨</h1>
-                <p class="my-4 text-2xl">Check out my projects on <a href="https://github.com/LisaWerner856"><u>github</u></a>!</p>
-                <p class="my-4 text-2xl">Check out my <a href="https://cr4zypumpk1n.itch.io/"><u>itch.io</u></a> page</p>
+                <p class="my-4 text-2xl">Check out my projects on <a
+                        href="https://github.com/LisaWerner856"><u>github</u></a>!</p>
+                <p class="my-4 text-2xl">Check out my <a href="https://cr4zypumpk1n.itch.io/"><u>itch.io</u></a> page
+                </p>
             </div>
         </section>
 
-        <section class="">
-            <h2 class="font-jua text-center text-2xl">Featured Project</h2>
-            <div class="my-2 grid grid-cols-2 bg-customLightPurple rounded-lg drop-shadow-lg mx-8">
-                <div class="py-3 px-6">
+        <section>
+            <h2 class="font-jua text-center text-2xl mb-4">Featured Project</h2>
+
+            <div class="mx-8 bg-customLightPurple rounded-lg drop-shadow-lg overflow-hidden
+                grid grid-cols-1 md:grid-cols-2">
+
+                <div class="order-1 md:order-2 h-56 md:h-auto bg-cover bg-center"
+                    style="background-image: url(./image/arduino1.jpg)">
+                </div>
+
+                <div class="order-2 md:order-1 py-6 px-6">
+
                     <h3 class="text-2xl mb-2">Simon says game</h3>
-                    <nav class="flex items-center justify-auto">
+
+                    <nav class="flex items-center mb-3">
                         <div class="bg-customDarkPurple rounded-full px-2 text-sm drop-shadow-lg">
                             <p>arduino</p>
                         </div>
@@ -106,22 +114,22 @@ function toggleMenu() {
                             <p>c++</p>
                         </div>
                     </nav>
-                    <div class="my-4">
-                        <p>
-                           I recreated the classic simon says game (electronic version) with an arduino uno.
-                        </p>
-                    </div>
-                    <div>
-                        <button class="bg-customDarkPurple rounded-lg p-2">
-                            <a href="https://github.com/LisaWerner856/KD-Microcontroller">Github Repository</a>
-                        </button>
-                    </div>
+
+                    <p class="my-4">
+                        I recreated the classic simon says game (electronic version) with an arduino uno.
+                    </p>
+
+                    <button class="bg-customDarkPurple rounded-lg p-2">
+                        <a href="https://github.com/LisaWerner856/KD-Microcontroller">
+                            Github Repository
+                        </a>
+                    </button>
+
                 </div>
-                <div class="bg-contain bg-no-repeat bg-right rounded-r-lg"
-                    style="background-image: url(./image/arduino1.jpg)">
-                </div>
+
             </div>
         </section>
+
     </main>
 
     <footer
