@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description: 'The Repository for my website.',
     tags: ['html', 'css/tailwind'],
     status: 'in-progress',
-    image: './image/portfoliowebsite-screenshot.png',
+    image: '/image/portfoliowebsite-screenshot.png',
     githubUrl: 'https://github.com/LisaWerner856/lisawerner856.github.io',
     blogContent: {
       heading: 'Builind My Website',
@@ -65,7 +65,27 @@ export const projects: Project[] = [
       'A console application textbased rpg, inspired by the classic game Zork. The setting is the Deep Space Nine space station. You have just graduated from Starfleet academy, ready to start your first assignment.',
     tags: ['c#'],
     status: 'in-progress',
-    image: 'https://raw.githubusercontent.com/LisaWerner856/lisawerner856.github.io/main/image/TextAdventure-DS9-screenshot.png',
+    image: 'public/image/TextAdventure-DS9-screenshot.png',
+    githubUrl: 'https://github.com/LisaWerner856/TextbasedAdventure',
+  },
+  {
+    slug: 'wizards-leap',
+    title: 'Wizards Leap',
+    description:
+      'A 2D plattfomer, inspired by Super Mario Bros.',
+    tags: ['c#', 'unity3d-engine'],
+    status: 'in-progress',
+    image: 'public/image/TextAdventure-DS9-screenshot.png',
+    githubUrl: 'https://github.com/LisaWerner856/TextbasedAdventure',
+  }, 
+  {
+    slug: 'speed-crash',
+    title: 'Speed Crash!',
+    description:
+      'A semi-realistic racing game. Try not to crash!',
+    tags: ['c#', 'unity3d-engine'],
+    status: 'in-progress',
+    image: 'public/image/TextAdventure-DS9-screenshot.png',
     githubUrl: 'https://github.com/LisaWerner856/TextbasedAdventure',
   },
 ]
