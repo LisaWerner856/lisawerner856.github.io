@@ -22,7 +22,7 @@ export const projects: Project[] = [
       'I recreated the classic simon says game (electronic version) with an arduino uno.',
     tags: ['arduino', 'c/c++'],
     status: 'completed',
-    image: './image/arduino1.jpg',
+    image: '/image/arduino1.jpg',
     githubUrl: 'https://github.com/LisaWerner856/KD-Microcontroller',
   },
   {
